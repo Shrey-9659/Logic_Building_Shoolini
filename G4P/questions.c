@@ -29,3 +29,23 @@
 //     length, width, length*width);
 //     return 0;
 // }
+
+int main(){
+    int randomNum, chance = 5;
+    printf("Enter a random value from 1 to 20 : ");
+    scanf("%d", &randomNum);
+    for(int i = 1; i<=5; i++){
+        int ansValue;
+        printf("Enter a value : ");
+        scanf("%d", &ansValue);
+        if(ansValue == randomNum){
+            printf("Horray! You won\n");
+            break;
+        }else{
+            printf("Try once again\n");
+            
+            printf("Chances left : %d \n", chance - i);
+        }
+    }
+    return 0;
+}
